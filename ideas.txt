@@ -1,4 +1,29 @@
 ideas 
 
 - theme: muscles in the human body 
-- 
+- player starts with 5 lives and a score of 0
+- each time they correctly guess a muscle, +1 to score
+- each time they move to next guess, reset lives
+- if lose all lives, GAME OVER!
+- computer has list of muscles 
+- computer randomly generates a muscle
+- computer displays number of * corresponding to number of letters in muscle
+- player presses a key to guess
+- if correct, then asterisk -> letter
+- if incorrect, display letter that was wrong, lose a life
+- continue until lives are 0 or word is guessed
+- if word is guessed then new word
+
+pseudo-code
+
+create array of muscles
+math-random a muscle in array
+generate * = length.muscle
+prompt user press key
+compare key to muscle string 
+on key (from muscle string) display letter, add point to score
+else if key already selected wait
+else key incorrect remove life, add letter to incorrect guesses
+repeat until guess complete
+else lives lost 
+generate new word
