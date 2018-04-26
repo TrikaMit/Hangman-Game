@@ -97,6 +97,9 @@ function pickLetter() {
                         remainingLetters--;
                         console.log(remainingLetters);
                         document.getElementById('answer-box').innerHTML = starArray.join(" ");
+                        var rightLetter = document.createElement('div');
+                        rightLetter.innerHTML = lowerLetter;
+                        document.getElementById('already-guesses').appendChild(rightLetter);
                     }else if (!pickMuscle.includes(whatLetter)){
                         alert("WRONG!");
                         lives -= 1;
